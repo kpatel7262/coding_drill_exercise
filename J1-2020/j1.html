@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>J1-2020</title>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="j1_jsfile.js"></script>
+	</head>
+	<body>
+		<form action="" method="post" name="barley_treat">
+			<h2>Check Barley's happiness level</h2>
+
+			<label for="s_treat">Small Treats</label>
+			<input type="number" name="s_treat" id="s_treat" required/><br/>
+
+			<label for="m_treat">Medium Treats</label>
+			<input type="number" name="m_treat" id="m_treat" required/><br/>
+
+			<label for="l_treat">Large Treats</label>
+			<input type="number" name="l_treat" id="l_treat" required/><br/>
+			<p style="color: red" id="error_s"></p>
+			
+			<input type="button" value="Check Barley's mood" onclick="result()" /><br/>
+			
+			<p id="ans"></p>
+		</form>
+	</body>
+</html> 
